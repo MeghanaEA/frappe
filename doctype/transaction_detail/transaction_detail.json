@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-01 11:40:52.186680",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book",
+  "visitor",
+  "status",
+  "transaction_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "visitor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Visitor"
+  },
+  {
+   "fieldname": "book",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book "
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "mandatory_depends_on": "// eval: parent.status == \"Issue\""
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-07 15:09:35.394617",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "Transaction Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
