@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-01 16:05:04.431415",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book_id",
+  "visitor",
+  "column_break_bqiel",
+  "status",
+  "section_break_ucebe",
+  "details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "visitor",
+   "fieldtype": "Link",
+   "label": "Visitor",
+   "options": "Visitor"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Issue\nReturn"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Transaction Detail",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bqiel",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ucebe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "book_id",
+   "fieldtype": "Link",
+   "label": "Book Id",
+   "options": "Book"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table",
+   "label": "Transaction Details",
+   "options": "Transaction Detail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-09-07 15:09:59.274059",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "Library Transaction Detail",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
